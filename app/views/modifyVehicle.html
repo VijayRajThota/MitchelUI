@@ -1,0 +1,47 @@
+<div ng-controller="Ctrl1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<center style="font-size:200%;">Modify Vehicle</center>
+   <form class="form-inline" role="form">
+    <div class="form-group">
+      <label for="id">Enter the Vehicle ID</label>
+      <input type="number" class="form-control" id="number" placeholder="Vehicle ID" ng-model="id">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="getVehicle(id)">Update</button> 
+   </form>
+
+<br>
+   
+   <div ng-show="displayForm=='1'">
+
+
+    <h2> Stored Information </h2>
+    <br>
+
+  <p> Vehicle ID: {{id}} , Vehicle Year : {{year}}, Vehicle Make : {{make}},  Vehicle Model :{{model}} </p>
+
+  <br>
+
+    <h2> Information to be Updated </h2>
+    <br>
+   <form class="form-inline" role="form">
+    <div class="form-group">
+      <label for="year">Updated Year Value</label>
+      <input type="number" class="form-control" id="number" placeholder="Year" ng-model="newvehicle.year">
+    </div>
+    <div class="form-group">
+      <label for="make">New Make Name</label>
+      <input type="text" class="form-control" id="number" placeholder="Make" ng-model="newvehicle.make">
+    </div>
+    <div class="form-group">
+      <label for="model">New Model Name</label>
+      <input type="text" class="form-control" id="number" placeholder="Model" ng-model="newvehicle.model">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="update(newvehicle)">Update</button> 
+   </form>
+
+  
+
+   </div>
+ 
+  </center>
+  </div>

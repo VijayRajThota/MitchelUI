@@ -1,0 +1,82 @@
+<div ng-controller="Ctrl1"> 
+     
+      <link rel="stylesheet" href="views/coverpage/css/bootstrap.min.css" type="text/css">
+      <!-- Custom Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="views/coverpage/font-awesome/css/font-awesome.min.css" type="text/css">
+      <!-- Plugin CSS -->
+      <link rel="stylesheet" href="views/coverpage/css/animate.min.css" type="text/css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="views/coverpage/css/creative.css" type="text/css">
+      <!-- Bootstrap Core CSS -->
+      <link href="views/homepage/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="views/homepage/css/shop-homepage.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="http://www.mitchell.com/">Mitchell International Coding Challenge</a>
+        </div>
+      </div>
+    </nav>
+
+  <div class="row" style="margin-left:20%;margin-right:20%;">          
+    <section class="no-padding" id="portfolio">
+    <div class="container-fluid">
+      <div class="row no-gutter">
+        <div class="col-lg-3 col-sm-6">
+          <a class="btn btn-success" ng-click="insert()">Insert Vehicle</a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a ng-click="viewAll()" class="btn btn-success">View All Vehicles</a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a  class="btn btn-success" ng-click="modify()">Update Vehicle</a>
+        </div> 
+        <div class="col-lg-3 col-sm-6">
+          <a  class="btn btn-success" ng-click="delete()">Delete Vehicle</a>
+        </div>               
+      </div>
+    </div>
+    </section>
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+<div ng-show="displayOption=='0'">
+ <center>
+ <div to-insert></div>
+ </center>
+</div>
+
+<div ng-show="displayOption=='1'">
+<center>
+<div to-view></div>
+</center>
+</div>
+
+
+<div ng-show="displayOption =='2'">
+<center>
+<div to-update></div>
+</center>
+</div>
+
+<div ng-show="displayOption =='3'">
+<center>
+<div to-delete></div>
+</center>
+</div>
+</div>

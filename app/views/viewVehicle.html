@@ -1,0 +1,14 @@
+<div ng-controller="Ctrl1">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 >View Vehicles</h1>
+          </div>
+        </div>
+      <div>
+        <div ng-repeat="vehicle in allVehicles" >
+          <p> <b>Vehicle ID:{{vehicle.id}}</b>, Year:{{vehicle.year}}, Make:{{vehicle.make}}, Model:{{vehicle.model}}</p>
+          <br>              
+        </div>          
+</div>

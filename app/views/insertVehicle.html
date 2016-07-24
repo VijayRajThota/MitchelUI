@@ -1,0 +1,24 @@
+<div ng-controller="Ctrl1">
+
+    <center style="font-size:200%;">Insert Vehicle</center>
+    <br>
+    <center>
+    <form class="form-inline">
+    <div class="form-group">
+      <label for="year">YEAR:</label>
+      <input type="number" class="form-control" id="number" ng-model="vehicle.year" placeholder="enter year">
+    </div>
+    <div class="form-group">
+      <label for="make">MAKE:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="enter make name" ng-model="vehicle.make">
+    </div>
+    <div class="form-group">
+      <label for="model">MODEL:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="enter model name" ng-model="vehicle.model">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="insertVehicle(vehicle)">Submit</button>
+  </form>
+  <br>
+   
+  </center>
+</div>
